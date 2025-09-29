@@ -1,0 +1,39 @@
+/* Scoped styles for AdminView component */
+.admin-view {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.admin-view *,
+.admin-view *::before,
+.admin-view *::after {
+  box-sizing: border-box;
+}
+
+.admin-view .admin-content {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+/* Custom scrollbar for admin view only */
+.admin-view ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin-view ::-webkit-scrollbar-track {
+  background: #e8f0fa;
+}
+
+.admin-view ::-webkit-scrollbar-thumb {
+  background: #e8f0fa;
+}
+
+.admin-view ::-webkit-scrollbar-thumb:hover {
+  background: #e8f0fa;
+}

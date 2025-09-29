@@ -1,0 +1,311 @@
+/* Ensure body has white background and no flex display */
+body {
+  background: #ffffff !important;
+  margin: 0;
+  padding: 0;
+  display: block !important;
+}
+
+/* Remove the blue background gradient */
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.login-card {
+  background: #222b34;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  padding: 48px 36px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 340px;
+}
+
+.login-card h2 {
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.login-input {
+  width: 100%;
+  padding: 16px 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1.5px solid #cfd8dc;
+  font-size: 1.1rem;
+  background: #ffffff;
+  color: #333333;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.login-input::placeholder {
+  color: #666666;
+}
+
+.login-input:focus {
+  border: 1.5px solid #057a9b;
+}
+
+.login-btn {
+  background: linear-gradient(90deg, #ffb300 0%, #ff9800 100%);
+  color: #222b34;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #ff9800 0%, #ffb300 100%);
+}
+
+.top-bar {
+  width: 100vw;
+  background: #4e9a8c;
+  color: #fff;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* Remove box-shadow for a flatter look */
+  box-shadow: none;
+}
+
+.top-bar-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+  flex: 1;
+}
+
+.top-bar-actions {
+  display: flex;
+  gap: 18px;
+}
+
+.top-bar-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  outline: none;
+}
+
+.top-bar-btn.logout {
+  background: #d32f2f;
+  color: #fff;
+  border: 2px solid #d32f2f;
+}
+
+.top-bar-btn:hover {
+  background: #fff;
+  color: #4e9a8c;
+}
+
+.top-bar-btn.logout:hover {
+  background: #b71c1c;
+  color: #fff;
+  border: 2px solid #b71c1c;
+}
+
+.main-btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
+.main-btn {
+  background: #057a9b;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 32px 36px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s;
+}
+
+.main-btn:hover {
+  background: #05495e;
+}
+
+.main-testing {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .main-btn-group {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 90px;
+  }
+  .top-bar-title {
+    font-size: 1.2rem;
+  }
+  .top-bar {
+    height: 48px;
+    padding: 0 10px;
+  }
+}
+
+/* Main content responsive adjustments */
+.main-content {
+  transition: margin-left 0.2s;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 180px !important;
+  }
+  .main-content.sidebar-collapsed {
+    margin-left: 56px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-left: 160px !important;
+  }
+  .main-content.sidebar-collapsed {
+    margin-left: 56px !important;
+  }
+}
+
+/* Responsive input fields for Profile page */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 14px !important;
+    padding: 8px !important;
+  }
+
+  .react-select__control {
+    min-height: 40px !important;
+  }
+
+  .react-select__value-container {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 12px !important;
+    padding: 6px !important;
+  }
+
+  .react-select__control {
+    min-height: 36px !important;
+  }
+
+  .react-select__value-container {
+    font-size: 12px !important;
+  }
+}
+
+/* New responsive styles for the updated layout */
+@media (min-width: 1025px) {
+  .dashboard-container {
+    justify-content: space-between !important;
+    gap: 48px !important;
+  }
+
+  .dashboard-card {
+    flex: 1 !important;
+    max-width: calc(50% - 24px) !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-container {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .dashboard-card {
+    min-width: 100% !important;
+    margin: 8px 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .dashboard-card {
+    min-width: 100% !important;
+    margin: 4px 0 !important;
+    padding: 16px !important;
+  }
+
+  .dashboard-title {
+    font-size: 24px !important;
+  }
+
+  .dashboard-subtitle {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .dashboard-card {
+    min-width: 100% !important;
+    margin: 2px 0 !important;
+    padding: 12px !important;
+  }
+
+  .dashboard-title {
+    font-size: 20px !important;
+  }
+
+  .dashboard-subtitle {
+    font-size: 12px !important;
+  }
+}

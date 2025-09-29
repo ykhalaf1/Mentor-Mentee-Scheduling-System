@@ -1,0 +1,194 @@
+.mentee-form {
+  background-color: #fff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  background-color: #05495e;
+  color: #fff;
+  width: 100vw;
+  min-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+  height: calc(100vh - 90px);
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-title {
+  color: #057a9b;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.button-group {
+  display: flex;
+  gap: 32px;
+}
+
+.btn {
+  background-color: #057a9b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 18px 48px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #05495e;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 56px 56px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 1.45rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+  height: fit-content;
+}
+
+.form-card h2 {
+  color: #057a9b;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.form-card label {
+  color: #057a9b;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 28px;
+  font-size: 1.32rem;
+  letter-spacing: 0.5px;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  padding: 24px 18px;
+  border: 1.5px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 1.32rem;
+  font-family: inherit;
+  background: #f9f9fa;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.2s;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+  border: 1.5px solid #057a9b;
+  outline: none;
+}
+
+.form-card textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-card .btn {
+  margin-top: 32px;
+  width: 100%;
+  padding: 26px 0;
+  font-size: 1.35rem;
+}
+
+@media (max-width: 900px) {
+  .form-card {
+    padding: 32px 8px;
+    max-width: 98vw;
+  }
+  .header {
+    font-size: 1.2rem;
+    height: 50px;
+  }
+  .container {
+    margin-top: 70px;
+  }
+}

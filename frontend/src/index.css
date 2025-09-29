@@ -1,0 +1,65 @@
+/* Regular weight */
+@font-face {
+  font-family: "UmmahProf";
+  src:
+    url("../public/kollektif/Kollektif.ttf") format("truetype"),
+    url("../public/kollektif/Kollektif.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold weight */
+@font-face {
+  font-family: "UmmahProf"; /* Same family name */
+  src:
+    url("../public/kollektif/Kollektif-Bold.ttf") format("truetype"),
+    url("../public/kollektif/Kollektif-Bold.otf") format("opentype");
+  font-weight: bold; /* This differentiates it */
+  font-style: normal;
+}
+
+/* Italic weight */
+@font-face {
+  font-family: "UmmahProf"; /* Same family name */
+  src: url("../public/kollektif/Kollektif-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; /* This differentiates it */
+}
+
+/* Bold Italic weight */
+@font-face {
+  font-family: "UmmahProf"; /* Same family name */
+  src: url("../public/kollektif/Kollektif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; /* These differentiate it */
+}
+
+* {
+  font-family:
+    "UmmahProf",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    sans-serif;
+}
+
+/* Or apply to body (more common approach) */
+body {
+  font-family:
+    "UmmahProf",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,90 @@
+.oauth-container {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.oauth-loading {
+  text-align: center;
+  color: #6c757d;
+}
+
+.oauth-loading p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.oauth-success {
+  text-align: center;
+  color: #28a745;
+}
+
+.oauth-success p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.oauth-prompt {
+  text-align: center;
+}
+
+.oauth-prompt p {
+  margin: 0 0 15px 0;
+  color: #495057;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.oauth-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.oauth-button:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.oauth-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.oauth-error {
+  text-align: center;
+  color: #dc3545;
+}
+
+.oauth-error p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+
+.oauth-retry-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.oauth-retry-button:hover {
+  background-color: #5a6268;
+}
